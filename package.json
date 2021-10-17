@@ -1,0 +1,21 @@
+{
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-medium-zoom": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
+    "@vuepress/plugin-search": "^1.5.2",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-seo": "^0.1.4"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "patch-package": "^6.2.2",
+    "postinstall-postinstall": "^2.1.0"
+  }
+}

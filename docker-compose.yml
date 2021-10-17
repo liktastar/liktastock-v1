@@ -1,0 +1,9 @@
+version: "1.0"
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app:cached
+    ports: ["8080:8080"]
+    working_dir: /app
