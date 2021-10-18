@@ -1,0 +1,13 @@
+diff --git a/node_modules/vuepress-theme-meteorlxy/lib/components/TheMain.vue b/node_modules/vuepress-theme-meteorlxy/lib/components/TheMain.vue
+index 03562d1..2b92fa0 100644
+--- a/node_modules/vuepress-theme-meteorlxy/lib/components/TheMain.vue
++++ b/node_modules/vuepress-theme-meteorlxy/lib/components/TheMain.vue
+@@ -58,7 +58,7 @@ export default {
+       if ('aside' in this.$page.frontmatter) {
+         return this.$page.frontmatter.aside
+       }
+-      return true
++      return false
+     },
+ 
+     containerClass () {
