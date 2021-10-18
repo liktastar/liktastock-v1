@@ -2,8 +2,7 @@ module.exports = {
   // Title of your website
   title: 'LIKTASTOCK',
 
-  // Description of your website
-  description: '気ままに語っていくブログです',
+  // Description of your website description: '気ままに語っていくブログです',
 
   // Language of your website
   locales: {
@@ -12,13 +11,46 @@ module.exports = {
     },
   },
 
+  markdown: {
+    linkify: true,
+    breaks: true,
+  },
+
   // Theme to use
   theme: 'meteorlxy',
 
   // Theme config
   themeConfig: {
     // Language of this theme. See the [Theme Language] section below.
-    lang: 'en-US',
+    lang: {
+      // default pages title
+      home: 'Home',
+      posts: 'Posts',
+      category: 'Category',
+      categories: 'Categories',
+      tag: 'Tag',
+      tags: 'Tags',
+
+      // post filter
+      allCategories: 'All',
+      search: 'Search',
+      searchHint: 'Search in title and excerpt',
+      noRelatedPosts: 'No related posts',
+
+      // post meta
+      top: 'Top',
+      createdAt: 'Created',
+      updatedAt: 'Updated',
+      prevPost: '古い記事',
+      nextPost: '新しい記事',
+
+      // post nav
+      toc: 'Table of Contents',
+      comments: 'Comments',
+
+      // hints
+      notFound: 'ページが存在しません',
+    },
 
     // Personal infomation (delete the fields if you don't have / don't want to display)
     personalInfo: {
@@ -26,7 +58,7 @@ module.exports = {
       nickname: 'liktastar',
 
       // Introduction of yourself (HTML supported)
-      description: 'Switchゲーマー',
+      description: 'Switchゲーマー<br><a href="/introduction">自己紹介記事</a>',
 
       // Your avatar image
       // Set to external link
@@ -95,6 +127,7 @@ module.exports = {
     nav: [
       { text: 'Home', link: '/', exact: true },
       { text: 'Posts', link: '/posts/', exact: false },
+      { text: 'YouTube', link: '/youtube/', exact: false },
     ],
 
     // Enable smooth scrolling or not
@@ -110,21 +143,15 @@ module.exports = {
 
     // Pagination config (Optional)
     pagination: {
-      perPage: 5,
+      perPage: 10,
     },
 
     // Default Pages (Optional, the default value of all pages is `true`)
     defaultPages: {
       // Allow theme to add Home page (url: /)
-      home: true,
+      home: false,
       // Allow theme to add Posts page (url: /posts/)
-      posts: true,
+      posts: false,
     },
-
-    nav: [
-      { text: 'Home', link: '/', exact: true },
-      { text: 'Posts', link: '/posts/', exact: false },
-      { text: 'Custom Pages', link: '/custom-pages/', exact: false },
-    ],
   },
 }
