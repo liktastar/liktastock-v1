@@ -20,6 +20,12 @@ module.exports = {
     breaks: true,
   },
 
+  plugins: {
+    'sitemap': {
+      hostname: 'https://www.liktastock.net'
+    },
+  },
+
   // Theme to use
   theme: 'meteorlxy',
 
